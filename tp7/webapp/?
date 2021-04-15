@@ -1,0 +1,8 @@
+---
+
+- hosts: client
+  tasks:
+  - name: Creating an empty file
+    file:
+      path: "/home/centos/toto.txt"
+      state: touch
